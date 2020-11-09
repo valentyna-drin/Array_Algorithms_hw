@@ -9,15 +9,19 @@ public class hw {
         int key = 15;
         int lower_index = 0, higher_index = array.length - 1;
         boolean found = false;
-        while (!found && (lower_index <= higher_index)){
+        while (!found && (lower_index <= higher_index)) {
             int middle_index = (lower_index + higher_index) / 2;
             int middle_value = array[middle_index];
-            if (middle_value == key)
+            if (middle_value == key) {
+                System.out.println(middle_value);
                 found = true;
-            else if (middle_value > key)
+            } else if (middle_value > key) {
                 higher_index = middle_index - 1;
-            else
+                System.out.println(middle_value);
+            } else {
                 lower_index = middle_index + 1;
+                System.out.println(middle_value);
+            }
         }
         System.out.println(found);
     }
