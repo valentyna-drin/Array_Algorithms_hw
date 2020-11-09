@@ -25,4 +25,21 @@ public class hw {
         }
         System.out.println(found);
     }
+
+    public static void hw2(){
+        String[] students = {"Alissa", "Ben", "Charlie", "Dianna"};
+        String[] grades = {"B", "D", "B", "A"};
+        final String key = "Charlie";
+        boolean found = false;
+        String grade = " ";
+        for (int i = 0; !found && i < students.length; i++)
+            if (students[i].equals(key)) {
+                found = true;
+                grade = grades[i];
+            }
+        if (found)
+            System.out.println("grade is " + grade);
+        else
+            System.out.println("error");
+    }
 }
