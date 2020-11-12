@@ -66,7 +66,7 @@ public class hw {
     public static void hw3_2() {
         int[] data = {-4, 11, 7, -12, 6, 1};
         boolean changed = true;
-        int correct = 0; // how many are correct at the end
+        int correct = 0;
         while (changed == true) {
             changed = false;
             for (int i = 0; i < data.length - 1 - correct; i++) {
