@@ -1,4 +1,5 @@
 package com.company;
+import ibcsutils.*;
 
 public class hw {
 
@@ -80,5 +81,12 @@ public class hw {
         for (int e : data)
             System.out.print(e + " ");
         System.out.println("");
+    }
+
+    public static void hw4() {
+        String link = "http://www-personal.umich.edu/~jlawler/wordlist";
+        String[] words = ReadViaURL.readWords(link);
+        String[] words = new String[];
+
     }
 }
