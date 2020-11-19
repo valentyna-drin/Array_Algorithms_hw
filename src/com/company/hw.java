@@ -167,4 +167,39 @@ public class hw {
         System.out.println(found);
     }
 
+    public static void hw5(){  //insertion sort
+
+        /* I = 1
+        * VAL = 0
+        * J = 0
+        * ARRAY = {9, 7, 2, 11}
+        * N = ARRAY.length
+        * loop while (I > N)
+        *   VAL = ARRAY[I];
+        *   J = I - 1
+        *   while J >= 0 AND ARRAY[j]>VAL
+        *       ARRAY[J +1 ] = ARRAY[J]
+        *       J = J - 1
+        *   end loop
+        * end loop
+        * output ARRAY
+         */
+
+        int i = 1, val, j;
+        int[] array = {9, 7, 2, 11};
+        int n = array.length;
+        while (i < n) {
+            val = array[i];
+            j = i - 1;
+            while ((j >= 0) && (array[j] > val)) {
+                array[j + 1] = array[j];
+                j = j - 1;
+            }
+            array[j + 1] = val;
+            i = i + 1;
+        }
+        for (int e : array)
+            System.out.print(e + ", ");
+        System.out.println("");
+    }
 }
